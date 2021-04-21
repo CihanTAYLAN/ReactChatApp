@@ -1,0 +1,70 @@
+.chat-container {
+  position: relative;
+  height: calc( 100vh -  300px);
+}
+
+.chat-container ul {
+  scroll-behavior: smooth;
+  overflow: scroll;
+  list-style: none;
+  padding: 0px 20px;
+  margin: 0;
+  height: calc( 100% -  70px);
+  border: 1px solid #dee2e6;
+}
+
+.chat-container ul li {
+  margin: 10px 0px;
+  color: #000;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.chat-container ul li .user-icon {
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+}
+
+.chat-container ul li .user-icon img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.chat-container ul li .message {
+  margin: 0px 10px;
+  flex: auto;
+}
+
+.chat-container ul li .message span {
+  color: #fff;
+  border-radius: 10px;
+  padding: 9px 10px;
+  background-color: #669;
+  display: inline-block;
+  max-width: calc(100% - 80px);
+  overflow: hidden;
+}
+
+.chat-container ul li.left {
+  text-align: left;
+}
+
+.chat-container ul li.right {
+  justify-content: end;
+  text-align: right;
+}
+
+.chat-container ul li.right .message span {
+  text-align: left;
+}
+
+.chat-container ul li.right .user-icon {
+  order: 2;
+}
+
+.chat-container .input-text-row {
+  position: absolute;
+  bottom: 20px;
+  width: calc( 100% -  48px);
+}

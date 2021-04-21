@@ -1,0 +1,50 @@
+.chat-container
+    position: relative
+    height: calc( 100vh -  300px)
+    ul
+        scroll-behavior: smooth
+        overflow: scroll
+        list-style: none
+        padding: 0px 20px
+        margin: 0
+        height: calc( 100% -  70px)
+        border: 1px solid #dee2e6
+        li
+            margin: 10px 0px
+            color: #000
+            display: flex
+            flex-wrap: nowrap
+            .user-icon
+                height: 40px
+                width: 40px
+                min-width: 40px
+                img
+                    max-height: 100%
+                    max-width: 100%
+            .message
+                margin: 0px 10px
+                flex: auto
+                span
+                    color: #fff
+                    border-radius: 10px
+                    padding: 9px 10px
+                    background-color: #669
+                    display: inline-block
+                    max-width: calc(100% - 80px);
+                    overflow: hidden;
+        li.left
+            text-align: left
+        li.right
+            justify-content: end
+            text-align: right
+            .message
+                span
+                    text-align: left
+            .user-icon
+                order: 2
+    .input-text-row
+        position: absolute
+        bottom: 20px;
+        width: calc( 100% -  48px)
+
+
