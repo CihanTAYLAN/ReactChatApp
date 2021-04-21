@@ -8,7 +8,7 @@ npm start
 ```
 
 ## Demo
-Demo : [Link](https://chat.cihantaylan.com)
+Demo : [chat.cihantaylan.com](https://chat.cihantaylan.com)
 
 ![](https://raw.githubusercontent.com/cihantaylan/ReactChatApp/main/image.png)
 
